@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <title>Котяры</title>
-</head>
     <meta name="author" content="AndreyKorepanov" /> <!-- Метаданные -->
     <meta name="description" content="Сайт с котами" />
+	<meta charset="UTF-8">
     <link rel="shortcut icon" href="img/shortcut_icon.png" type="img" /> <!-- Лого у вкладки сайта -->
+</head>
 <body>
 <header>
     <hr>
@@ -22,12 +23,53 @@
 		<li>В культуре</li>
     </ul>
 </nav>
-<aside>
+<hr>
+<aside> <!-- Формы -->
     <form action="search" method="get" id="srh">
         Поиск: <input type="text" name="search">
         <button type="submit">Найти</button>
     </form>
+	<hr>
+	<form action="login" method="post">
+        <fieldset>
+            <legend>Регистрация аккаунта:</legend>
+			<table class="form_fill">
+                <tr>
+                    <td>
+                        <label for="login">Логин:</label>
+                        <input type="text" id="login">
+				    </td>
+                    <td>
+                        <label for="pass">Пароль:</label>
+                        <input type="text" id="pass">
+                    </td>
+                </tr>
+				<tr>
+				    <td>
+					    <label for="email">Эл.почта:</label>
+                        <input type="text" id="name">
+					</td>
+					<td>
+					    У вас есть кот?
+						<select>
+						    <optgroup label="Выберите ответ">
+						    <option value="0">Есть кот/кошка</option>
+						    <option value="1">Есть кошка-жена и миска риса</option>
+						    <option value="2">Я одинок :(</option>
+						    </optgroup>
+					    </select>
+					</td>
+				</tr>
+				<tr>
+				    <td>
+                        <input type="submit" id="submit">
+                    </td>
+				</tr>
+		    </table>
+        </fieldset>
+    </form>
 </aside>
+<hr>
 <main>
     <h2>Главная страница.</h2> <!-- Описание сайта на главной странице -->
     <article class="beginning">
