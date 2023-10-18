@@ -6,11 +6,12 @@
     <meta name="description" content="Сайт с котами" />
 	<meta charset="UTF-8">
     <link rel="shortcut icon" href="img/shortcut_icon.png" type="img" /> <!-- Лого у вкладки сайта -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header>
     <hr>
-    <h1>Сайт с котиками :)</h1>
+    <h1>Сайт с котиками :) </h1>
     <hr>
 </header>
 <nav>
@@ -81,15 +82,16 @@
         <blockquote>"Без кошек на свете было бы совсем одиноко." - Надея Ясминска</blockquote> <!-- Цитата -->
     </article>
 	<article class="table">
-	    <table border="-"> <!-- Табличка -->
-		    <caption>Сравнение кошачьего и человеческого возраста</caption>
+	    <table> <!-- Табличка -->
+			<tr>
+			    <th id="title_table" colspan="6">Сравнение кошачьего и человеческого возраста</th>
 		    <tr>
-			    <th>Кошачий возраст</th>
-				<th>Возраст человека</th>
-				<th>Кошачий возраст</th>
-				<th>Возраст человека</th>
-				<th>Кошачий возраст</th>
-				<th>Возраст человека</th>
+			    <th id="title_tabl_sect">Кошачий возраст</th>
+				<th id="title_tabl_sect">Возраст человека</th>
+				<th id="title_tabl_sect">Кошачий возраст</th>
+				<th id="title_tabl_sect">Возраст человека</th>
+				<th id="title_tabl_sect">Кошачий возраст</th>
+				<th id="title_tabl_sect">Возраст человека</th>
 		    </tr>
 			<tr>
 			    <th>1 месяц</th>
@@ -160,8 +162,8 @@
 				<th>11 лет 8 месяцев</th>
 				<th>9 лет</th>
 				<th>52 года</th>
-				<th>20 лет</th>
-				<th>84 года</th>
+				<th rowspan="3">20 лет</th>
+				<th rowspan="3">84 года</th>
 			</tr>
 			<tr>
 			    <th>10 месяцев</th>
@@ -187,7 +189,7 @@
         <legend>Оставьте отзыв о сайте:</legend>
 			<table class="form_fill">
             <tr>
-                <input type="text" id="review">
+                <input type="review" id="review">
 				<button type="submit">Отправить</button>
 		    </tr>
 			</table>
